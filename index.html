@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeQuiz</title>
+    <!--Linking external css -->
+    <link rel="stylesheet" href="styles.css">
+    <!--Linking google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <!-- Subject And Number Of Questions selection Container start -->
+    <div class="subjectContainer">
+        <div class="appName">
+            <h1>CodeQuiz</h1>
+        </div>
+        <h4 class="subjectText">Select Subject</h4>
+        <div class="subjectOptions">
+            <button class="subject active">Python</button>
+            <button class="subject">Java</button>
+            <button class="subject">SQL</button>
+            <button class="subject">JavaScript</button>
+        </div>
+
+        <h4 class="questionsSelectionText">Number Of Questions</h4>
+        <div class="numberOfQuestions">
+            <button class="questionSize ">10</button>
+            <button class="questionSize">15</button>
+            <button class="questionSize active">20</button>
+            <button class="questionSize">35</button>
+        </div>
+        <div class="startQuizBtn">
+            <button class="start">Start Quiz</button>
+        </div>
+    </div>
+    <!-- Subject And Number Of Questions selection Container end -->
+
+    <!-- Questions appearing Container start -->
+    <div class="examContainer">
+        <div class="heading">
+            <h2 class="headingText"></h2>
+            <div class="timer">
+                <span class="material-symbols-rounded">timer</span>
+                <h3 class="timeDuration"></h3>
+            </div>
+        </div>
+        <div class="questionArea">
+            <h2 class="question"></h2>
+            <ul class="answerList"></ul>
+        </div>
+        <div class="progress">
+            <p class="status"></p>
+            <div class="nextQuestionBtn">
+                <button class="nextBtn">Next <span class="material-symbols-rounded">arrow_forward</span></button>
+            </div>
+        </div>
+    </div>
+    <!-- Questions appearing Container end -->
+    
+    <!-- Results Showing Container start -->
+    <div class="resultContainer">
+        <div class="resultHead">
+            <h1 class="resultText">Results</h1>
+        </div>
+        <div class="resultContent">
+            <p class="resultMessage"></p>
+        </div>
+        <div class="tryAgainBtn">
+            <button class="tryAgain">Try Again</button>
+        </div>
+    </div>
+    <!-- Results Showing Container end-->
+
+    <!-- Linking the JavaScript which conatins Questions -->
+    <script src="questions.js"></script>
+
+    <!-- Linking external JavaScript Code -->
+    <script src="script.js"></script>
+</body>
+</html>
